@@ -1,0 +1,37 @@
+%btn{
+      @include flexCenter;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      padding: 0 20px;
+      border:none;
+
+
+
+}
+
+.btnPrimary{
+  @extend %btn;
+  background-color:$bgColorBtnPrimary;
+  transition: all 0.75s;
+
+  &:hover{
+    transform: scale(0.98);
+    background-color: darken($bgColorBtnPrimary, 10%);
+
+  }
+
+}
+
+.btnSecondary{
+  @extend %btn;
+  background-color:$bgColorPrimary;
+  transition: all 0.75s;
+
+  &:hover{
+
+    transform: scale(0.98);
+    background-color: darken($bgColorPrimary ,30%);
+  }
+
+}

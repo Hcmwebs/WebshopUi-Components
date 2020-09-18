@@ -1,0 +1,56 @@
+
+.container{
+  width: 100%;
+  margin: 100px auto;
+  @include gridCenter;
+  grid-template-columns: 1fr;
+  gap:20px;
+}
+
+
+%card{
+
+  @include flexSpaceBetween;
+  border-radius: 15px;
+}
+
+.start{
+  @include alignSelf(flex-start);
+}
+.end{
+  @include alignSelf(flex-end);
+}
+
+.reset{
+  margin: 0;
+  padding: 0;
+}
+
+
+//margin & padding
+$spaceAmounts:(10, 20,);
+
+@each $space in $spaceAmounts {
+  .m-#{$space} {
+    margin: #{$space}px;
+  }
+
+  .mY-#{$space} {
+    margin: #{$space}px 0;
+  }
+
+  .mX-#{$space} {
+    margin: 0 #{$space}px;
+  }
+  .p-#{$space} {
+    padding: #{$space}px;
+  }
+
+  .pY-#{$space} {
+    padding: #{$space}px 0;
+  }
+
+  .pX-#{$space} {
+    padding: 0 #{$space}px;
+  }
+}

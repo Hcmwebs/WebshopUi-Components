@@ -1,0 +1,16 @@
+@media(min-width:760px){
+  .container{
+    width: 1400px;
+    grid-template-columns: repeat(2, 1fr);
+     margin: 0 auto;
+
+    }
+
+    .card-one{
+      width: 370px;
+    }
+    .card-two{
+      width: 365px;
+    }
+
+}
