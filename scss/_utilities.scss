@@ -14,6 +14,14 @@
   border-radius: 15px;
 }
 
+%card-one{
+  @extend %card;
+    width: 100%;
+    height: 120px;
+    color: #fff;
+    background-color:$bgColorSecondary;
+}
+
 .start{
   @include alignSelf(flex-start);
 }
