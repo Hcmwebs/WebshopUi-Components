@@ -1,28 +1,28 @@
-@media(min-width:500px){
+@media(min-width:770px){
   .container{
     width: 1400px;
     grid-template-columns: repeat(2, 1fr);
-     margin: 0 auto;
+    margin: 0 auto;
 
+  }
+
+  .card-one,
+  .card-three,
+  .card-six{
+    width: 370px;
+  }
+  .card-two,
+  .card-five{
+    width: 365px;
+  }
+
+  .card-four{
+    width: auto;
+
+    button{
+      margin:0 10px;
     }
 
-    .card-one,
-    .card-three,
-    .card-six{
-      width: 370px;
-    }
-    .card-two,
-    .card-five{
-      width: 365px;
-    }
-
-    .card-four{
-      width: auto;
-
-      button{
-        margin:0 10px;
-      }
-
-    }
+  }
 
 }
