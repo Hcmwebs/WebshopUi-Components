@@ -1,4 +1,4 @@
-@media(min-width:760px){
+@media(min-width:500px){
   .container{
     width: 1400px;
     grid-template-columns: repeat(2, 1fr);
@@ -6,11 +6,23 @@
 
     }
 
-    .card-one{
+    .card-one,
+    .card-three,
+    .card-six{
       width: 370px;
     }
-    .card-two{
+    .card-two,
+    .card-five{
       width: 365px;
+    }
+
+    .card-four{
+      width: auto;
+
+      button{
+        margin:0 10px;
+      }
+
     }
 
 }

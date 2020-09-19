@@ -14,10 +14,6 @@
   border-radius: 15px;
 }
 
-%card-one{
-  @extend %card;
-
-}
 
 .start{
   @include alignSelf(flex-start);
@@ -25,12 +21,6 @@
 .end{
   @include alignSelf(flex-end);
 }
-
-.reset{
-  margin: 0;
-  padding: 0;
-}
-
 
 //margin & padding
 $spaceAmounts:(10, 20,);
