@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+$font-stack:'Roboto', sans-serif;
+$bgColorPrimary:#C6ECEA;
+$bgColorSecondary:#2C698D;
+$bgColorBtnPrimary:#1B5E85;
+$textPrimarycolor:#fff;
+
+@mixin gridCenter {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+@mixin flexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+@mixin alignSelf($property) {
+  align-self: $property;
+}
+
