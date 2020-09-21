@@ -185,21 +185,19 @@ small{
     top:10px;
     right:10px;
     @include gridCenter;
-    background-color:#FF5F5F;
-    border-radius: 50%;
-    padding: 10px;
+    background-color: transparent;
+    padding: 0;
     border: none;
 
-
-
-
-
     i{
-      color:#fff;
+      color: #FFF;
+      background-color:#FF5F5F;
 
 
+      &:hover{
+        color: #FF5F5F;
       }
-
+    }
   }
 
   &__slider{
